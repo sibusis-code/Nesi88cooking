@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nesi88 Cooking provides stylish catering for corporate events, private celebrations, and intimate functions in and around Birch Acres.">
+  <title>Nesi88 Cooking | Catering Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-logo">
+      <span class="logo-main">Nesi88</span>
+      <span class="logo-sub">Cooking</span>
+    </div>
+  </div>
+
+  <div id="scrollProgress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  <button id="menuBackdrop" class="menu-backdrop" aria-hidden="true" tabindex="-1"></button>
+  <a class="skip-link" href="#book">Skip to booking form</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home" aria-label="Nesi88 Cooking home">
+        <span class="logo-main">Nesi88</span>
+        <span class="logo-sub">Cooking</span>
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-small" href="#book">Book Now</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Serving appetite and quality is our obsession</p>
+          <h1>Catering That Looks Good, Tastes Better, And Wins The Room</h1>
+          <p class="hero-text">From elegant desserts to full event spreads, Nesi88 Cooking creates menus that turn your function into a memorable experience.</p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#book">Get a Fast Quote</a>
+            <a class="btn btn-outline" href="https://wa.me/27796797391" target="_blank" rel="noopener">WhatsApp Booking</a>
+          </div>
+
+          <ul class="trust-points" aria-label="Service highlights">
+            <li>Corporate and private events</li>
+            <li>Beautiful presentation</li>
+            <li>Friendly, reliable service</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <img src="poster.jpeg" alt="Nesi88 Cooking catering services poster" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section-reveal">
+      <div class="container">
+        <p class="section-kicker">What we cater</p>
+        <h2>Menus Built Around Your Occasion</h2>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Finger Foods</h3>
+            <p>Wraps, sliders, spring rolls, snack platters and event-friendly bites your guests can enjoy while networking.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Main Meals</h3>
+            <p>Flavour-packed hot dishes with balanced sides for birthdays, conferences, church events and family functions.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Dessert Tables</h3>
+            <p>Mini cheesecakes, layered desserts and stylish sweet stations designed for visual impact and great taste.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Beverage Stations</h3>
+            <p>Juice and refreshment setups that complete your event and keep guests comfortable throughout the day.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing section-reveal">
+      <div class="container">
+        <p class="section-kicker">Popular packages</p>
+        <h2>Clear Starting Prices For Faster Decisions</h2>
+        <p class="section-intro">Final quote depends on guest count, menu choices, and event location. These packages help clients choose quickly and enquire faster.</p>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="price-label">Starter Spread</p>
+            <p class="price-value">From R85<span>/guest</span></p>
+            <ul>
+              <li>2 finger food options</li>
+              <li>1 hot dish + side</li>
+              <li>Basic setup and service</li>
+            </ul>
+          </article>
+
+          <article class="price-card price-card-featured">
+            <p class="badge">Most Booked</p>
+            <p class="price-label">Celebration Feast</p>
+            <p class="price-value">From R135<span>/guest</span></p>
+            <ul>
+              <li>4 finger food options</li>
+              <li>2 mains + 2 sides</li>
+              <li>Dessert cups and styling</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <p class="price-label">Premium Event Table</p>
+            <p class="price-value">From R195<span>/guest</span></p>
+            <ul>
+              <li>Custom menu consultation</li>
+              <li>Full buffet and dessert station</li>
+              <li>Drink station and premium setup</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section-reveal">
+      <div class="container">
+        <p class="section-kicker">Recent setups</p>
+        <h2>See What Your Event Could Look Like</h2>
+
+        <div class="gallery-grid">
+          <img src="images/menu.jpeg" alt="Event food table with plated options" loading="lazy">
+          <img src="images/desert.jpeg" alt="Mini desserts served in cups" loading="lazy">
+          <img src="images/desert2.jpeg" alt="Dessert display with assorted mini cakes" loading="lazy">
+          <img src="images/desert3.jpeg" alt="Dessert station with cheesecakes and cups" loading="lazy">
+          <img src="images/juice.jpeg" alt="Refreshing juice station setup" loading="lazy">
+          <img src="images/wraps.jpeg" alt="Basket of wraps and finger foods" loading="lazy">
+          <img src="images/burgers.jpeg" alt="Slider burgers and finger snacks served for events" loading="lazy">
+          <img src="images/salds.jpeg" alt="Hot meals and side dishes in catering setup" loading="lazy">
+          <img src="images/desert on rack.jpeg" alt="Tiered dessert rack for catered event" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase section-reveal" aria-label="Catering showcase reel">
+      <div class="container showcase-grid">
+        <div>
+          <p class="section-kicker">Live atmosphere</p>
+          <h2>See The Setup Energy In Motion</h2>
+          <p>Photos show quality, but video shows experience. This preview helps potential clients imagine their own event with the same premium presentation and flow.</p>
+          <a class="btn" href="#book">Get My Event Quote</a>
+        </div>
+        <div class="showcase-media">
+          <video controls autoplay muted loop playsinline preload="metadata" poster="images/juice.jpeg">
+            <source src="images/drink-rack-vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="process section-reveal">
+      <div class="container">
+        <p class="section-kicker">Simple booking flow</p>
+        <h2>From Enquiry To Event In 3 Easy Steps</h2>
+
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Share your event details</h3>
+            <p>Tell us your date, guest count and the type of catering you need.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Receive a tailored quote</h3>
+            <p>We match menu ideas and portions to your budget and occasion.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Secure your booking</h3>
+            <p>Confirm and relax while we handle food preparation and presentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof section-reveal" aria-label="Client trust and testimonials">
+      <div class="container">
+        <p class="section-kicker">Why clients choose us</p>
+        <h2>Trusted For Taste, Presentation, And Reliability</h2>
+
+        <div class="badge-row" role="list" aria-label="Trust badges">
+          <span role="listitem">Food hygiene first</span>
+          <span role="listitem">On-time event setup</span>
+          <span role="listitem">Professional presentation</span>
+          <span role="listitem">Custom menu flexibility</span>
+        </div>
+
+        <div class="testimonial-grid">
+          <article>
+            <p>"Our conference guests loved the variety and quality. Setup was clean, elegant and perfectly on time."</p>
+            <h3>Corporate Client</h3>
+          </article>
+          <article>
+            <p>"The dessert table was beautiful and tasted incredible. Everyone kept asking who the caterer was."</p>
+            <h3>Birthday Host</h3>
+          </article>
+          <article>
+            <p>"Communication was smooth from booking to event day. The team made the whole experience stress free."</p>
+            <h3>Private Function Client</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-menu section-reveal" aria-label="Most requested menu items">
+      <div class="container">
+        <p class="section-kicker">Client favourites</p>
+        <h2>6 Menu Items Guests Keep Requesting</h2>
+        <p class="section-intro">Every event has its crowd-pleasers. These six are ordered again and again.</p>
+
+        <div class="menu-items-grid">
+          <article class="menu-item-card">
+            <span class="menu-icon">&#127857;</span>
+            <h3>Layered Dessert Cups</h3>
+            <p>Creamy, beautifully staged individual desserts with seasonal berries and passionfruit drizzle.</p>
+          </article>
+          <article class="menu-item-card">
+            <span class="menu-icon">&#127863;</span>
+            <h3>Mini Cheesecake Bites</h3>
+            <p>Rich bases, smooth cheese filling and a fruit-topped finish that photographs as well as it tastes.</p>
+          </article>
+          <article class="menu-item-card">
+            <span class="menu-icon">&#127828;</span>
+            <h3>Ginger &amp; Lemon Chicken</h3>
+            <p>Fall-off-the-bone tender, glazed and garnished. A guaranteed crowd favourite at every hot-buffet table.</p>
+          </article>
+          <article class="menu-item-card">
+            <span class="menu-icon">&#129367;</span>
+            <h3>Flavoured Wraps Cone Basket</h3>
+            <p>Crispy cones packed with chicken, salad and sauce — elegant finger food that guests grab first.</p>
+          </article>
+          <article class="menu-item-card">
+            <span class="menu-icon">&#127867;</span>
+            <h3>Refreshing Juice Station</h3>
+            <p>Fresh-pour dispensers with house juice, ginger lemonade and fruit infusions styled for your table.</p>
+          </article>
+          <article class="menu-item-card">
+            <span class="menu-icon">&#127829;</span>
+            <h3>Gourmet Slider Bites</h3>
+            <p>Petite brioche sliders with crispy patty, cucumber and cocktail cherry garnish that look as good as they taste.</p>
+          </article>
+        </div>
+
+        <div class="menu-cta">
+          <a class="btn" href="nesi88-menu.pdf.html" target="_blank" rel="noopener">Download Full Menu &amp; Price Card</a>
+          <a class="btn btn-outline" href="#book">Book Based On This Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="booking section-reveal">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <p class="section-kicker">Lead generation form</p>
+          <h2>Book Your Catering Consultation</h2>
+          <p>Complete the form and we will contact you quickly with package options and pricing guidance.</p>
+
+          <ul>
+            <li>Phone: +27 79 679 7391</li>
+            <li>Email: nesi88cooking@gmail.com</li>
+            <li>Address: 5264 Modumela Street, Birch Acres</li>
+            <li>Instagram: @nesi88cooking</li>
+          </ul>
+        </div>
+
+        <form id="bookingForm" class="booking-form" action="send-booking.php" method="post" novalidate>
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field-grid">
+            <label>Full Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+
+            <label>Phone Number
+              <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+
+            <label>Email Address
+              <input type="email" name="email" autocomplete="email">
+            </label>
+
+            <label>Event Date
+              <input type="date" name="eventDate" required>
+            </label>
+
+            <label>Event Type
+              <select name="eventType" required>
+                <option value="">Select an option</option>
+                <option>Wedding</option>
+                <option>Birthday</option>
+                <option>Corporate Event</option>
+                <option>Funeral/Cultural Gathering</option>
+                <option>Private Function</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <p id="packageHint" class="package-hint" aria-live="polite">Select an event type to see a recommended package.</p>
+
+            <label>Estimated Guests
+              <input type="number" name="guests" min="10" placeholder="e.g. 80" required>
+            </label>
+
+            <p id="estimateHint" class="estimate-hint" aria-live="polite">Estimated total will appear after selecting package and guest count.</p>
+
+            <label>Location
+              <input type="text" name="location" placeholder="Town or venue" required>
+            </label>
+
+            <label>Budget Range (Optional)
+              <input type="text" name="budget" placeholder="e.g. R8 000 - R12 000">
+            </label>
+          </div>
+
+          <label>What would you like served?
+            <textarea name="message" rows="4" placeholder="Tell us the menu style, dietary needs, and any preferences."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Send Booking Request</button>
+            <a class="btn btn-outline" id="whatsAppFallback" href="https://wa.me/27796797391" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-wrap">
+      <p>Nesi88 Cooking Catering Services</p>
+      <p><a href="tel:+27796797391">+27 79 679 7391</a> | <a href="mailto:nesi88cooking@gmail.com">nesi88cooking@gmail.com</a></p>
+      <p class="managed-by">Website managed by <a href="https://www.mplai.co.za" target="_blank" rel="noopener">MPL AI</a></p>
+    </div>
+  </footer>
+
+  <a class="floating-cta" href="#book" aria-label="Open booking form">Book Your Date</a>
+
+  <section class="chatbot" aria-label="AI FAQ assistant">
+    <button id="chatToggle" class="chat-toggle" type="button" aria-expanded="false" aria-controls="chatWindow">
+      Ask AI
+    </button>
+
+    <div id="chatWindow" class="chat-window" aria-hidden="true">
+      <div class="chat-head">
+        <h2>Nesi88 AI Assistant</h2>
+        <button id="chatClose" class="chat-close" type="button" aria-label="Close assistant">x</button>
+      </div>
+
+      <div id="chatMessages" class="chat-messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+
+      <div class="chat-quick-actions" aria-label="FAQ quick actions">
+        <button type="button" data-question="How much does catering cost?">Pricing</button>
+        <button type="button" data-question="What menu options do you have?">Menu options</button>
+        <button type="button" data-question="How do I book?">How to book</button>
+        <button type="button" data-question="Do you cater for corporate events?">Corporate events</button>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <label class="chat-label" for="chatInput">Ask a question</label>
+        <input id="chatInput" name="chatInput" type="text" placeholder="Type your question..." autocomplete="off">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

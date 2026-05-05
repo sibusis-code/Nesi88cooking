@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesi88 Cooking – Menu & Price Card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;700;800&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background: #f8f0d9;
+      color: #1e1b18;
+      padding: 32px 20px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+      border-bottom: 3px solid #cf5b2a;
+      padding-bottom: 20px;
+    }
+
+    .brand {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 4rem;
+      color: #cf5b2a;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+
+    .sub {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .tagline {
+      font-style: italic;
+      margin-top: 6px;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.8rem;
+      margin: 28px 0 12px;
+      color: #cf5b2a;
+    }
+
+    .section { margin-bottom: 24px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    thead th {
+      background: #1e1b18;
+      color: #fff;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 800;
+    }
+
+    tbody tr:nth-child(even) { background: #fff7e8; }
+    tbody td { padding: 9px 12px; border-bottom: 1px solid rgba(30,27,24,0.1); }
+
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .pkg {
+      background: #fff;
+      border: 1px solid rgba(30,27,24,0.15);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .pkg.featured {
+      background: #fff2d6;
+      border-color: #a5451f;
+    }
+
+    .pkg-name { font-weight: 800; font-size: 1rem; }
+
+    .pkg-price {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 2rem;
+      color: #cf5b2a;
+      line-height: 1.1;
+      margin: 4px 0;
+    }
+
+    .pkg ul { padding-left: 16px; font-size: 0.88rem; }
+    .pkg li { margin: 4px 0; }
+
+    .contact {
+      background: #1e1b18;
+      color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+      font-size: 0.95rem;
+    }
+
+    .contact strong { display: block; font-size: 1.1rem; margin-bottom: 8px; grid-column: 1/-1; }
+    .contact a { color: #f0c070; }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .contact { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <p class="brand">Nesi88</p>
+    <p class="sub">Cooking</p>
+    <p class="tagline">Serving appetite and quality is our obsession.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Menu Highlights</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Items Available</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Finger Foods</td><td>Wraps, sliders, spring rolls, samoosas, mini pies, stuffed mushrooms</td></tr>
+        <tr><td>Hot Mains</td><td>Glazed chicken, beef stew, curry, BBQ ribs, grilled fish</td></tr>
+        <tr><td>Sides</td><td>Jasmine rice, roasted vegetables, potato salad, coleslaw, creamy pasta</td></tr>
+        <tr><td>Desserts</td><td>Mini cheesecakes, layered cups, malva pudding, mousse, brownie bites</td></tr>
+        <tr><td>Beverages</td><td>Fresh juice dispensers, ginger lemonade, infused water, gin &amp; tonic stations</td></tr>
+        <tr><td>Extras</td><td>Grazing boards, fruit platters, themed styling, tiered dessert racks</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Package Pricing</h2>
+    <div class="packages">
+      <div class="pkg">
+        <p class="pkg-name">Starter Spread</p>
+        <p class="pkg-price">From R85<small>/guest</small></p>
+        <ul>
+          <li>2 finger food options</li>
+          <li>1 hot dish + side</li>
+          <li>Basic setup &amp; service</li>
+          <li>Min. 30 guests</li>
+        </ul>
+      </div>
+      <div class="pkg featured">
+        <p class="pkg-name">&#11088; Celebration Feast</p>
+        <p class="pkg-price">From R135<small>/guest</small></p>
+        <ul>
+          <li>4 finger food options</li>
+          <li>2 mains + 2 sides</li>
+          <li>Dessert cups &amp; styling</li>
+          <li>Min. 50 guests</li>
+        </ul>
+      </div>
+      <div class="pkg">
+        <p class="pkg-name">Premium Event Table</p>
+        <p class="pkg-price">From R195<small>/guest</small></p>
+        <ul>
+          <li>Custom menu consult</li>
+          <li>Full buffet &amp; dessert station</li>
+          <li>Drink station + premium setup</li>
+          <li>Min. 50 guests</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:12px;font-size:0.85rem;">* Prices are starting guides. Final quote based on guest count, location, and menu selections.</p>
+  </div>
+
+  <div class="contact">
+    <strong>Book Your Event</strong>
+    <span>&#128241; +27 79 679 7391</span>
+    <span>&#128231; nesi88cooking@gmail.com</span>
+    <span>&#127968; 5264 Modumela Street, Birch Acres</span>
+    <span>&#128247; @nesi88cooking</span>
+    <span>&#127760; <a href="https://www.nesi88cooking.co.za">www.nesi88cooking.co.za</a></span>
+  </div>
+
+  <p class="footer-note">To convert to PDF: open in your browser and select File &rsaquo; Print &rsaquo; Save as PDF.</p>
+
+</body>
+</html>
