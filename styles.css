@@ -294,6 +294,40 @@ h3 {
   max-width: 52ch;
 }
 
+.brand-note {
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(30, 27, 24, 0.15);
+  border-radius: 999px;
+  font-size: 0.94rem;
+}
+
+.social-inline {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-inline a {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.92rem;
+  background: #fff7e8;
+  border: 1px solid rgba(30, 27, 24, 0.12);
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.social-inline a:hover,
+.social-inline a:focus-visible {
+  border-color: rgba(165, 69, 31, 0.48);
+  background: #fff2db;
+}
+
 .hero-cta {
   margin: 22px 0;
   display: flex;
@@ -467,16 +501,44 @@ h3 {
 .gallery-grid {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.gallery-grid img {
+.gallery-card {
+  margin: 0;
+  background: #fff8eb;
+  border-radius: 14px;
+  border: 1px solid rgba(30, 27, 24, 0.12);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(30, 27, 24, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 32px rgba(30, 27, 24, 0.18);
+}
+
+.gallery-card.featured {
+  grid-column: span 2;
+}
+
+.gallery-card.tall {
+  grid-row: span 2;
+}
+
+.gallery-card img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-card figcaption {
+  padding: 10px 12px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 .showcase-grid {
@@ -672,6 +734,11 @@ textarea:focus {
 .managed-by {
   margin-top: 10px;
   font-size: 0.95rem;
+}
+
+.legal-name {
+  margin-top: 4px;
+  font-weight: 700;
 }
 
 .floating-cta {
@@ -904,7 +971,6 @@ textarea:focus {
 @media (max-width: 760px) {
   .service-grid,
   .pricing-grid,
-  .gallery-grid,
   .steps,
   .testimonial-grid,
   .menu-items-grid,
@@ -912,7 +978,17 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .gallery-grid img {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card.featured,
+  .gallery-card.tall {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .gallery-card img {
     aspect-ratio: 16 / 11;
   }
 
