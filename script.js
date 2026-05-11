@@ -192,7 +192,7 @@ function runChatAction(actionKey) {
   }
 
   if (actionKey === "whatsapp") {
-    window.open("https://wa.me/27796797391", "_blank", "noopener");
+    window.open("https://wa.me/27796797381", "_blank", "noopener");
   }
 }
 
@@ -243,7 +243,7 @@ if (chatToggle && chatWindow && chatMessages) {
   });
 }
 
-const businessNumber = "27796797391";
+const businessNumber = "27796797381";
 const packageRates = {
   starter: 85,
   celebration: 135,

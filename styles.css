@@ -170,6 +170,16 @@ img {
   text-transform: uppercase;
 }
 
+.logo-group {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--orange-dark);
+  font-weight: 700;
+  opacity: 0.8;
+  margin-top: 1px;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -292,16 +302,6 @@ h3 {
 .hero-text {
   font-size: 1.08rem;
   max-width: 52ch;
-}
-
-.brand-note {
-  margin: 12px 0 0;
-  padding: 10px 14px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid rgba(30, 27, 24, 0.15);
-  border-radius: 999px;
-  font-size: 0.94rem;
 }
 
 .social-inline {
@@ -516,22 +516,19 @@ h3 {
 
 .gallery-grid {
   margin-top: 24px;
-  column-count: 4;
-  column-gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
 
 .gallery-card {
   margin: 0;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 14px;
   background: #fff8eb;
   border-radius: 14px;
   border: 1px solid rgba(30, 27, 24, 0.12);
   overflow: hidden;
   box-shadow: 0 10px 24px rgba(30, 27, 24, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  break-inside: avoid;
 }
 
 .gallery-card:hover {
@@ -983,11 +980,11 @@ textarea:focus {
   }
 
   .gallery-grid {
-    column-count: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .hero {
-    padding-top: 42px;
+    padding-top: 5px;
   }
 }
 
@@ -1002,17 +999,11 @@ textarea:focus {
   }
 
   .gallery-grid {
-    column-count: 1;
-  }
-
-  .gallery-card.featured,
-  .gallery-card.tall {
-    grid-column: auto;
-    grid-row: auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .gallery-card img {
-    aspect-ratio: 16 / 11;
+    aspect-ratio: 4 / 3;
   }
 
   .chatbot {
